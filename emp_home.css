@@ -1,0 +1,392 @@
+/* Responsive */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    background-image: url(images/secondpage.jpg);
+}
+
+header {
+    background-color: #ffffff;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 90px;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+.nav-links li a:hover {
+    color: red; 
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.buttons a {
+    flex: 1; 
+}
+
+.dark-blue {
+    background-color: #00008B; 
+    color: #ffffff; 
+    padding: 10px 40px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.dark-blue:hover {
+    background-color: #003366; 
+}
+
+.about-containt {
+    max-width: 80%;
+    margin: 0 auto;
+    padding-bottom: 1%;
+    text-align: center;
+    margin-top: 10%;
+    border-radius: 10px;
+    background-color: rgba(242, 242, 243, 0.5); 
+    backdrop-filter: blur(5px); 
+    z-index: -1;
+    margin-bottom: 20px;
+}
+
+.about-containt h2 {
+    color: black;
+}
+
+.about-content {
+    margin-top: 20px;
+}
+
+.about-content p {
+    line-height: 1.5;
+    margin: 2%;
+}
+
+.popup h2 span {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    width: 0;
+    animation: typing 3s steps(40) infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.services-section {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+    gap: 40px;
+}
+
+.service {
+    flex: 0 1 30%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 10px rgba(0, 5, 138, 0.621);
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.service p {
+    font-size: 16px;
+}
+
+.search-btn {
+    margin-top: 40px;
+}
+
+.search-btn a {
+    text-decoration: none;
+}
+
+.search-btn button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn button:hover {
+    background-color: #0056b3;
+}
+
+.review-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.review-popup {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-popup .popup-content {
+    text-align: center;
+}
+
+.review-popup .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.review-popup h2 {
+    margin-top: 0;
+}
+
+.review-popup form {
+    margin-top: 20px;
+}
+
+.review-popup label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.review-popup input[type="text"],
+.review-popup input[type="number"],
+.review-popup textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.review-popup button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.getintouch-section {
+    justify-content: space-around;
+    margin-top: 45px;
+    background-color: #94d6ff;
+    text-align: center;
+    padding: 70px;
+}
+
+.getintouch-section h2 {
+    font-size: 35px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.contact-info .info {
+    width: 30%;
+    background: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 10px rgba(0, 5, 138, 0.621);
+}
+
+.contact-info .info h3 {
+    margin-top: 0;
+}
+
+/* Remaining CSS code */
+
+.message-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+}
+
+.message-section h2 {
+    font-size: 35px;
+}
+
+.left-section {
+    flex: 1;
+}
+
+.message-heading {
+    background-color: #94d6ff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.message-heading h2 {
+    margin-bottom: 10px;
+}
+
+.message-heading p {
+    margin-bottom: 10px;
+}
+
+.message-heading img {
+    width: 100px;
+    height: auto;
+}
+
+.right-section {
+    flex: 1;
+}
+
+.right-section h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries for Responsiveness */
+
+@media only screen and (max-width: 768px) {
+    .message-section {
+        flex-direction: column;
+    }
+
+    .message-section h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .message-heading img {
+        width: 80px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .message-heading img {
+        width: 60px;
+    }
+}

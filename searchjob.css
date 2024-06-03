@@ -1,0 +1,63 @@
+/* Responsive */
+ 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/searchjob.jpg');
+    background-size: cover;
+}
+.container {
+    width: 90%; /* Adjusted width for responsiveness */
+    max-width: 800px; /* Added max-width to prevent container from becoming too wide */
+    margin: 20px auto;
+    padding: 20px;
+    margin-top: 70px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(5px); 
+}
+h1 {
+    text-align: center;
+}
+.search-filters {
+    display: flex;
+    flex-wrap: wrap; /* Added flex-wrap to allow filters to wrap on smaller screens */
+    margin-bottom: 20px;
+}
+.search-filters input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px; /* Added margin bottom to create space between filters */
+    box-shadow: 0 0 20px 10px rgba(0, 5, 138, 0.3);
+}
+#searchButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Added margin bottom to create space between filters */
+}
+.job-container {
+    display: flex;
+    flex-wrap: wrap; /* Added flex-wrap to allow job cards to wrap on smaller screens */
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.job-card {
+    width: calc(33.33% - 20px); /* Adjusted width for responsiveness */
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px 10px rgba(0, 5, 138, 0.5);
+    margin-bottom: 20px; /* Added margin bottom to create space between job cards */
+}
+.job-card.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
